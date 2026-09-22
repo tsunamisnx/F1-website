@@ -35,7 +35,8 @@
 
 ## Превью
 
-<img width="1432" height="759" alt="Снимок экрана 2026-04-09 в 17 16 15" src="https://github.com/user-attachments/assets/2ced81ed-8a35-418f-89ad-89a550256413" />
+<img width="1432" height="759" alt="Снимок экрана 2026-04-09 в 17 16 15" src="https://github.com/user-attachments/assets/bda1ab10-43d7-421e-b3f6-91773e65652f" />
+
 
 
 ## Дисклеймер
