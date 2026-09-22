@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Достижения Формулы 1: витрина ключевых метрик." />
+    <title>Достижения — Формула 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Перейти к контенту</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html#main" aria-label="Формула 1 — на главную">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" focusable="false">
+              <defs>
+                <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ff2d2d" />
+                  <stop offset="1" stop-color="#ff5b5b" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M10 40c4-10 16-18 30-18h14l-6 6H40c-10 0-18 5-22 12h36l-6 6H10z"
+                fill="url(#g3)"
+              />
+              <path
+                d="M10 28c5-9 17-16 30-16h18l-6 6H40c-10 0-18 4-23 10h12l-6 6H10z"
+                fill="rgba(255,255,255,.85)"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__title">Формула 1</span>
+            <span class="brand__sub">Все о гонках</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navList">
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
+          <ul class="nav__list" id="navList">
+            <li><a class="nav__link" href="index.html#main">Главное</a></li>
+            <li><a class="nav__link" href="news.html">Новости</a></li>
+            <li><a class="nav__link" href="drivers.html">Гонщики</a></li>
+            <li><a class="nav__link" href="index.html#teams">Команды</a></li>
+            <li><a class="nav__link" href="index.html#calendar">Календарь</a></li>
+            <li><a class="nav__link is-active" href="achievements.html">Достижения</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links" aria-label="Социальные сети">
+          <a class="social-link" href="https://t.me/formula1" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://vk.com/formula1" target="_blank" rel="noopener noreferrer" aria-label="VK">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 19.5c-2.08 0-4.12-.48-6.04-1.38v-2.24c1.72 1.04 3.68 1.62 5.64 1.62 1.56 0 2.64-.48 2.64-1.5 0-.72-.48-1.14-2.4-1.5l-1.62-.3c-2.88-.54-4.26-1.86-4.26-4.02 0-2.28 1.92-3.78 5.04-3.78 1.8 0 3.6.42 5.04 1.2v2.16c-1.56-.96-3.24-1.5-4.98-1.5-1.44 0-2.34.48-2.34 1.32 0 .66.48 1.02 2.16 1.32l1.68.3c3.12.6 4.44 1.92 4.44 4.14 0 2.46-1.98 4.14-5.94 4.14z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/f1" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://rutube.ru/channel/formula1" target="_blank" rel="noopener noreferrer" aria-label="Rutube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 15l5-3-5-3v6z"/>
+              <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header__line" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <!-- Hero Section -->
+      <section class="achievements-hero">
+        <div class="container">
+          <div class="achievements-hero__content reveal">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              Season 2026
+            </div>
+            <h1 class="achievements-hero__title">
+              <span class="achievements-hero__titleAccent">Достижения</span>
+            </h1>
+            <p class="achievements-hero__lead">
+              Легендарные рекорды, чемпионские титулы и незабываемые моменты, которые сформировали историю Формулы-1.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Championship Stats -->
+      <section class="championship-stats">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Чемпионское наследие</h2>
+            <p class="sectionHead__sub">Цифры, определяющие величие.</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card reveal" style="--d: 100ms">
+              <div class="stat-card__icon"> trophy</div>
+              <div class="stat-card__value">75</div>
+              <div class="stat-card__label">Чемпионатов мира</div>
+              <div class="stat-card__sub">С 1950 года</div>
+            </div>
+
+            <div class="stat-card reveal" style="--d: 200ms">
+              <div class="stat-card__icon">speed</div>
+              <div class="stat-card__value">372</div>
+              <div class="stat-card__label">км/ч Максимальная скорость</div>
+              <div class="stat-card__sub">Монца 2026</div>
+            </div>
+
+            <div class="stat-card reveal" style="--d: 300ms">
+              <div class="stat-card__icon">timer</div>
+              <div class="stat-card__value">1:18.8</div>
+              <div class="stat-card__label">Рекорд круга</div>
+              <div class="stat-card__sub">Спа-Франкоршам</div>
+            </div>
+
+            <div class="stat-card reveal" style="--d: 400ms">
+              <div class="stat-card__icon">flag</div>
+              <div class="stat-card__value">1,100+</div>
+              <div class="stat-card__label">Гран-при</div>
+              <div class="stat-card__sub">Исторические моменты</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Records Gallery -->
+      <section class="records-gallery">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Непревзойдённые рекорды</h2>
+            <p class="sectionHead__sub">Вехи, которые, возможно, никогда не будут побиты.</p>
+          </div>
+
+          <div class="records-grid">
+            <div class="record-card reveal" style="--d: 100ms">
+              <div class="record-card__header">
+                <div class="record-card__badge">Больше всего побед</div>
+                <div class="record-card__year">2026</div>
+              </div>
+              <div class="record-card__content">
+                <h3 class="record-card__title">Макс Ферстаппен</h3>
+                <div class="record-card__stat">
+                  <span class="record-card__value">103</span>
+                  <span class="record-card__label">Побед в карьере</span>
+                </div>
+                <p class="record-card__desc">Бьёт все предыдущие рекорды с доминирующими выступлениями из сезона в сезон.</p>
+              </div>
+            </div>
+
+            <div class="record-card reveal" style="--d: 200ms">
+              <div class="record-card__header">
+                <div class="record-card__badge">Поул-позиции</div>
+                <div class="record-card__year">За всё время</div>
+              </div>
+              <div class="record-card__content">
+                <h3 class="record-card__title">Льюис Хэмилтон</h3>
+                <div class="record-card__stat">
+                  <span class="record-card__value">104</span>
+                  <span class="record-card__label">Поул-позиций</span>
+                </div>
+                <p class="record-card__desc">Мастер квалификационных сессий в разных командах и эпохах.</p>
+              </div>
+            </div>
+
+            <div class="record-card reveal" style="--d: 300ms">
+              <div class="record-card__header">
+                <div class="record-card__badge">Быстрые круги</div>
+                <div class="record-card__year">2026</div>
+              </div>
+              <div class="record-card__content">
+                <h3 class="record-card__title">Шарль Леклер</h3>
+                <div class="record-card__stat">
+                  <span class="record-card__value">38</span>
+                  <span class="record-card__label">Быстрых кругов</span>
+                </div>
+                <p class="record-card__desc">Постоянно раздвигает пределы с исключительным темпом в гонках.</p>
+              </div>
+            </div>
+
+            <div class="record-card reveal" style="--d: 400ms">
+              <div class="record-card__header">
+                <div class="record-card__badge">Подиумы</div>
+                <div class="record-card__year">За всё время</div>
+              </div>
+              <div class="record-card__content">
+                <h3 class="record-card__title">Фернандо Алонсо</h3>
+                <div class="record-card__stat">
+                  <span class="record-card__value">106</span>
+                  <span class="record-card__label">Подиумов</span>
+                </div>
+                <p class="record-card__desc">Легендарная последовательность на протяжении десятилетий соревнований Формулы-1.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Achievements -->
+      <section class="team-achievements">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Командное превосходство</h2>
+            <p class="sectionHead__sub">Кубки конструкторов и инженерные чудеса.</p>
+          </div>
+
+          <div class="team-grid">
+            <div class="team-card reveal" style="--d: 100ms">
+              <div class="team-card__visual">
+                <div class="team-card__logo">Ferrari</div>
+                <div class="team-card__badge">16 титулов</div>
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title">Скудерия Ferrari</h3>
+                <p class="team-card__desc">Самая успешная команда в истории Ф1 с несравненным наследием и страстью.</p>
+                <div class="team-card__stats">
+                  <div class="team-stat">
+                    <span class="team-stat__value">243</span>
+                    <span class="team-stat__label">Побед</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">789</span>
+                    <span class="team-stat__label">Подиумов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card reveal" style="--d: 200ms">
+              <div class="team-card__visual">
+                <div class="team-card__logo">Mercedes</div>
+                <div class="team-card__badge">8 титулов</div>
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title">Mercedes-AMG</h3>
+                <p class="team-card__desc">Доминирование в гибридную эпоху с революционной инженерией и стратегией.</p>
+                <div class="team-card__stats">
+                  <div class="team-stat">
+                    <span class="team-stat__value">125</span>
+                    <span class="team-stat__label">Побед</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">267</span>
+                    <span class="team-stat__label">Подиумов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card reveal" style="--d: 300ms">
+              <div class="team-card__visual">
+                <div class="team-card__logo">Red Bull</div>
+                <div class="team-card__badge">6 титулов</div>
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title">Red Bull Racing</h3>
+                <p class="team-card__desc">Аэродинамические инновации и агрессивная гоночная философия.</p>
+                <div class="team-card__stats">
+                  <div class="team-stat">
+                    <span class="team-stat__value">118</span>
+                    <span class="team-stat__label">Побед</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">234</span>
+                    <span class="team-stat__label">Подиумов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historic Moments -->
+      <section class="historic-moments">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Исторические моменты</h2>
+            <p class="sectionHead__sub">Гонки, которые навсегда изменили Формулу-1.</p>
+          </div>
+
+          <div class="moments-timeline">
+            <div class="moment-item reveal" style="--d: 100ms">
+              <div class="moment-item__date">1950</div>
+              <div class="moment-item__content">
+                <h3 class="moment-item__title">Первый чемпионат Ф1</h3>
+                <p class="moment-item__desc">Джузеппе Фарина побеждает в первом чемпионате мира Формулы-1.</p>
+              </div>
+            </div>
+
+            <div class="moment-item reveal" style="--d: 200ms">
+              <div class="moment-item__date">1976</div>
+              <div class="moment-item__content">
+                <h3 class="moment-item__title">Хант против Лауды</h3>
+                <p class="moment-item__desc">Джеймс Хант побеждает Ники Лауду всего на одно очко в драматичном финале.</p>
+              </div>
+            </div>
+
+            <div class="moment-item reveal" style="--d: 300ms">
+              <div class="moment-item__date">1988</div>
+              <div class="moment-item__content">
+                <h3 class="moment-item__title">Доминирование McLaren</h3>
+                <p class="moment-item__desc">Сенна и Прост выигрывают 15 из 16 гонок в самом доминирующем сезоне.</p>
+              </div>
+            </div>
+
+            <div class="moment-item reveal" style="--d: 400ms">
+              <div class="moment-item__date">2021</div>
+              <div class="moment-item__content">
+                <h3 class="moment-item__title">Битва в Абу-Даби</h3>
+                <p class="moment-item__desc">Макс Ферстаппен выигрывает свой первый титул в драме на последнем круге.</p>
+              </div>
+            </div>
+
+            <div class="moment-item reveal" style="--d: 500ms">
+              <div class="moment-item__date">2026</div>
+              <div class="moment-item__content">
+                <h3 class="moment-item__title">Начало новой эры</h3>
+                <p class="moment-item__desc">Революционные регуляции и рекордные выступления.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Season Rivalry -->
+      <section class="season-rivalry">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Жестокое противостояние 2026</h2>
+            <p class="sectionHead__sub">Интенсивная битва за чемпионское превосходство.</p>
+          </div>
+
+          <div class="rivalry-showdown">
+            <div class="rivalry-vs reveal" style="--d: 200ms">
+              <div class="vs-line"></div>
+              <div class="vs-text">VS</div>
+              <div class="vs-line"></div>
+            </div>
+
+            <div class="rivalry-drivers">
+              <div class="driver-card driver-card--left reveal" style="--d: 100ms">
+                <div class="driver-card__header">
+                  <div class="driver-card__team-tag">McLaren</div>
+                  <div class="driver-card__number">#4</div>
+                </div>
+                <div class="driver-card__visual">
+                  <div class="driver-card__photo">
+                    <img src="./assets/lando norris.jpeg" alt="Lando Norris" class="driver-photo">
+                  </div>
+                  <div class="driver-card__glow"></div>
+                </div>
+                <div class="driver-card__content">
+                  <h3 class="driver-card__name">Ландо Норрис</h3>
+                  <div class="driver-card__stats">
+                    <div class="driver-stat">
+                      <span class="driver-stat__value">287</span>
+                      <span class="driver-stat__label">Очков</span>
+                    </div>
+                    <div class="driver-stat">
+                      <span class="driver-stat__value">6</span>
+                      <span class="driver-stat__label">Побед</span>
+                    </div>
+                    <div class="driver-stat">
+                      <span class="driver-stat__value">5</span>
+                      <span class="driver-stat__label">Поулов</span>
+                    </div>
+                  </div>
+                  <div class="driver-card__form">
+                    <div class="form-indicator form-indicator--win">W</div>
+                    <div class="form-indicator form-indicator--second">2</div>
+                    <div class="form-indicator form-indicator--win">W</div>
+                    <div class="form-indicator form-indicator--second">2</div>
+                    <div class="form-indicator form-indicator--win">W</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="driver-card driver-card--right reveal" style="--d: 300ms">
+                <div class="driver-card__header">
+                  <div class="driver-card__team-tag">Mercedes</div>
+                  <div class="driver-card__number">#44</div>
+                </div>
+                <div class="driver-card__visual">
+                  <div class="driver-card__photo">
+                    <img src="./assets/russel george.jpg" alt="George Russell" class="driver-photo">
+                  </div>
+                  <div class="driver-card__glow"></div>
+                </div>
+                <div class="driver-card__content">
+                  <h3 class="driver-card__name">Джордж Расселл</h3>
+                  <div class="driver-card__stats">
+                    <div class="driver-stat">
+                      <span class="driver-stat__value">265</span>
+                      <span class="driver-stat__label">Очков</span>
+                    </div>
+                    <div class="driver-stat">
+                      <span class="driver-stat__value">5</span>
+                      <span class="driver-stat__label">Побед</span>
+                    </div>
+                    <div class="driver-stat">
+                      <span class="driver-stat__value">7</span>
+                      <span class="driver-stat__label">Поулов</span>
+                    </div>
+                  </div>
+                  <div class="driver-card__form">
+                    <div class="form-indicator form-indicator--second">2</div>
+                    <div class="form-indicator form-indicator--win">W</div>
+                    <div class="form-indicator form-indicator--second">2</div>
+                    <div class="form-indicator form-indicator--win">W</div>
+                    <div class="form-indicator form-indicator--second">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rivalry-stats reveal" style="--d: 400ms">
+              <div class="rivalry-stat">
+                <div class="rivalry-stat__label">Разрыв</div>
+                <div class="rivalry-stat__value">22 очка</div>
+                <div class="rivalry-stat__bar">
+                  <div class="rivalry-bar rivalry-bar--left" style="width: 52%"></div>
+                  <div class="rivalry-bar rivalry-bar--right" style="width: 48%"></div>
+                </div>
+              </div>
+              
+              <div class="rivalry-stat">
+                <div class="rivalry-stat__label">Личные встречи</div>
+                <div class="rivalry-stat__value">6-5</div>
+                <div class="rivalry-stat__bar">
+                  <div class="rivalry-bar rivalry-bar--left" style="width: 55%"></div>
+                  <div class="rivalry-bar rivalry-bar--right" style="width: 45%"></div>
+                </div>
+              </div>
+
+              <div class="rivalry-stat">
+                <div class="rivalry-stat__label">Гонок осталось</div>
+                <div class="rivalry-stat__value">4</div>
+                <div class="rivalry-stat__bar">
+                  <div class="rivalry-bar rivalry-bar--neutral" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rivalry-quote reveal" style="--d: 500ms">
+              <blockquote class="rivalry-quote__text">
+                "Это то, ради чего Формула-1 и существует - два великих гонщика, которые толкают друг друга к абсолютному пределу каждые выходные."
+              </blockquote>
+              <cite class="rivalry-quote__author">Мартин Брандл, Sky Sports F1</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">
+              <span class="brand__title">Формула 1</span>
+              <span class="brand__sub">Концепт интерфейса • чистый JavaScript</span>
+            </span>
+          </div>
+          <div class="footer__fineprint">
+            Данный сайт не имеет отношения к рекламе, размещаемой во время трансляций гонок Формула-1, а также к официальным рекламным партнёрам и спонсорам. Все рекламные материалы на сайте размещаются независимо.
+        </div>
+
+        <div class="footer__right" aria-label="Социальные ссылки">
+          <a class="social" href="index.html#main" aria-label="Наверх">
+            <span class="social__icon" aria-hidden="true">↑</span>
+            <span class="social__text">Наверх</span>
+          </a>
+          <a class="social" href="news.html" aria-label="Новости">
+            <span class="social__icon" aria-hidden="true">◆</span>
+            <span class="social__text">Новости</span>
+          </a>
+          <a class="social" href="drivers.html" aria-label="Гонщики">
+            <span class="social__icon" aria-hidden="true">▦</span>
+            <span class="social__text">Гонщики</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottomInner">
+          <span>© <span id="year"></span> Формула 1</span>
+          <span class="mono">Плавная прокрутка • Свечение • Стекло</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
+

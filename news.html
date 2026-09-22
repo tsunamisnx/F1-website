@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Новости Формулы 1 — март 2026: сезон, техника, гонки. Полные материалы, видео и фото." />
+    <title>Все новости — Формула 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="page-news">
+    <a class="skip-link" href="#main">Перейти к контенту</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html#main" aria-label="Формула 1 — на главную">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" focusable="false">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ff2d2d" />
+                  <stop offset="1" stop-color="#ff5b5b" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M10 40c4-10 16-18 30-18h14l-6 6H40c-10 0-18 5-22 12h36l-6 6H10z"
+                fill="url(#g)"
+              />
+              <path
+                d="M10 28c5-9 17-16 30-16h18l-6 6H40c-10 0-18 4-23 10h12l-6 6H10z"
+                fill="rgba(255,255,255,.85)"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__title">Формула 1</span>
+            <span class="brand__sub">Все о гонках</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navList">
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
+          <ul class="nav__list" id="navList">
+            <li><a class="nav__link" href="index.html#main">Главное</a></li>
+            <li><a class="nav__link is-active" href="news.html">Новости</a></li>
+            <li><a class="nav__link" href="drivers.html">Гонщики</a></li>
+            <li><a class="nav__link" href="index.html#teams">Команды</a></li>
+            <li><a class="nav__link" href="index.html#calendar">Календарь</a></li>
+            <li><a class="nav__link" href="achievements.html">Достижения</a></li>
+            <li><a class="nav__link" href="#" id="streamBtn">Трансляция</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links" aria-label="Soical">
+          <a class="social-link" href="https://t.me/formula1" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://vk.com/formula1" target="_blank" rel="noopener noreferrer" aria-label="VK">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 19.5c-2.08 0-4.12-.48-6.04-1.38v-2.24c1.72 1.04 3.68 1.62 5.64 1.62 1.56 0 2.64-.48 2.64-1.5 0-.72-.48-1.14-2.4-1.5l-1.62-.3c-2.88-.54-4.26-1.86-4.26-4.02 0-2.28 1.92-3.78 5.04-3.78 1.8 0 3.6.42 5.04 1.2v2.16c-1.56-.96-3.24-1.5-4.98-1.5-1.44 0-2.34.48-2.34 1.32 0 .66.48 1.02 2.16 1.32l1.68.3c3.12.6 4.44 1.92 4.44 4.14 0 2.46-1.98 4.14-5.94 4.14z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/f1" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://rutube.ru/channel/formula1" target="_blank" rel="noopener noreferrer" aria-label="Rutube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 15l5-3-5-3v6z"/>
+              <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header__line" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <!-- История Формулы-1 -->
+      <section class="history-section">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">История Формулы-1</h2>
+            <p class="sectionHead__sub">Легендарные эпохи, команды и гонщики, определившие королеву автоспорта.</p>
+          </div>
+
+          <div class="history-grid">
+            <article class="history-card reveal">
+              <div class="history-card__header">
+                <div class="history-card__era">Золотая эра</div>
+                <div class="history-card__years">1988-1994</div>
+              </div>
+              <div class="history-card__content">
+                <h3 class="history-card__title">Айртон Сенна</h3>
+                <p class="history-card__desc">Бразильский гений, чья агрессивная техника и невероятная скорость на мокрой трассе сделали его легендой. 3 чемпионских титула, 65 поул-позиций и 41 победа.</p>
+                <div class="history-card__stats">
+                  <div class="history-stat">
+                    <span class="history-stat__value">3</span>
+                    <span class="history-stat__label">Титула</span>
+                  </div>
+                  <div class="history-stat">
+                    <span class="history-stat__value">41</span>
+                    <span class="history-stat__label">Победы</span>
+                  </div>
+                  <div class="history-stat">
+                    <span class="history-stat__value">65</span>
+                    <span class="history-stat__label">Поулы</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="history-card reveal">
+              <div class="history-card__header">
+                <div class="history-card__era">Доминирование</div>
+                <div class="history-card__years">2000-2006</div>
+              </div>
+              <div class="history-card__content">
+                <h3 class="history-card__title">Михаэль Шумахер</h3>
+                <p class="history-card__desc">Немецкий пилот, rewrite'ивший историю Формулы-1. 7 чемпионских титулов, 91 победа и беспрецедентная доминация с Ferrari.</p>
+                <div class="history-card__stats">
+                  <div class="history-stat">
+                    <span class="history-stat__value">7</span>
+                    <span class="history-stat__label">Титулы</span>
+                  </div>
+                  <div class="history-stat">
+                    <span class="history-stat__value">91</span>
+                    <span class="history-stat__label">Победы</span>
+                  </div>
+                  <div class="history-stat">
+                    <span class="history-stat__value">68</span>
+                    <span class="history-stat__label">Поулы</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="history-card reveal">
+              <div class="history-card__header">
+                <div class="history-card__era">Гибридная эра</div>
+                <div class="history-card__years">2014-2020</div>
+              </div>
+              <div class="history-card__content">
+                <h3 class="history-card__title">Льюис Хэмилтон</h3>
+                <p class="history-card__desc">Британский пилот, сравнявшийся с Шумахером по титулам. 7 чемпионств, 103 победы и революция в гибридной Формуле-1.</p>
+                <div class="history-card__stats">
+                  <div class="history-stat">
+                    <span class="history-stat__value">7</span>
+                    <span class="history-stat__label">Титулы</span>
+                  </div>
+                  <div class="history-stat">
+                    <span class="history-stat__value">103</span>
+                    <span class="history-stat__label">Победы</span>
+                  </div>
+                  <div class="history-stat">
+                    <span class="history-stat__value">104</span>
+                    <span class="history-stat__label">Поулы</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Обзор трасс -->
+      <section class="tracks-section">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Обзор трасс</h2>
+            <p class="sectionHead__sub">Культовые автодромы, ставшие легендами motorsport.</p>
+          </div>
+
+          <div class="tracks-grid">
+            <article class="track-card reveal">
+              <div class="track-card__visual">
+                <div class="track-card__map">
+                  <img src="https://f1report.ru/img/tracks/monza_2021.png" alt="Схема трассы Монца" />
+                </div>
+                <div class="track-card__flag">🇮🇹</div>
+              </div>
+              <div class="track-card__content">
+                <h3 class="track-card__title">Autodromo Nazionale Monza</h3>
+                <div class="track-card__subtitle">Храм скорости</div>
+                <p class="track-card__desc">Самая быстрая трасса календаря с длинными прямыми и средней скоростью более 250 км/ч. Историческая арена Формулы-1 с 1950 года.</p>
+                <div class="track-card__specs">
+                  <div class="track-spec">
+                    <span class="track-spec__label">Длина</span>
+                    <span class="track-spec__value">5.793 км</span>
+                  </div>
+                  <div class="track-spec">
+                    <span class="track-spec__label">Круги</span>
+                    <span class="track-spec__value">53</span>
+                  </div>
+                  <div class="track-spec">
+                    <span class="track-spec__label">Рекорд</span>
+                    <span class="track-spec__value">1:18.819</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="track-card reveal">
+              <div class="track-card__visual">
+                <div class="track-card__map">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Spa-Francorchamps_of_Belgium.svg/1280px-Spa-Francorchamps_of_Belgium.svg.png" alt="Схема трассы Спа" />
+                </div>
+                <div class="track-card__flag">🇧🇪</div>
+              </div>
+              <div class="track-card__content">
+                <h3 class="track-card__title">Circuit de Spa-Francorchamps</h3>
+                <div class="track-card__subtitle">Арденнский монстр</div>
+                <p class="track-card__desc">Самая длинная трасса календаря (7.004 км) с легендарным поворотом Eau Rouge. Требует от пилотов максимальной концентрации и мастерства.</p>
+                <div class="track-card__specs">
+                  <div class="track-spec">
+                    <span class="track-spec__label">Длина</span>
+                    <span class="track-spec__value">7.004 км</span>
+                  </div>
+                  <div class="track-spec">
+                    <span class="track-spec__label">Круги</span>
+                    <span class="track-spec__value">44</span>
+                  </div>
+                  <div class="track-spec">
+                    <span class="track-spec__label">Рекорд</span>
+                    <span class="track-spec__value">1:46.286</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Команды и болиды -->
+      <section class="teams-section">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Команды и болиды</h2>
+            <p class="sectionHead__sub">Топ-команды современной Формулы-1 и их гоночные машины.</p>
+          </div>
+
+          <div class="teams-grid">
+            <article class="team-card reveal">
+              <div class="team-card__visual">
+                <div class="team-card__logo">
+                  <div class="team-logo team-logo--ferrari">SF</div>
+                </div>
+                <div class="team-card__colors">
+                  <div class="color-block" style="background: #DC143C;"></div>
+                  <div class="color-block" style="background: #000000;"></div>
+                </div>
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title">Ferrari</h3>
+                <div class="team-card__subtitle">Scuderia Ferrari</div>
+                <p class="team-card__desc">Старейшая команда Формулы-1 с 1950 года. 16 чемпионских титулов и легендарные болиды от SF-24 до F2004.</p>
+                <div class="team-card__stats">
+                  <div class="team-stat">
+                    <span class="team-stat__value">16</span>
+                    <span class="team-stat__label">Титулы</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">243</span>
+                    <span class="team-stat__label">Победы</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">1950</span>
+                    <span class="team-stat__label">Основание</span>
+                  </div>
+                </div>
+                <div class="team-card__drivers">
+                  <span class="team-driver">Леклер</span>
+                  <span class="team-driver">Сайнс</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card reveal">
+              <div class="team-card__visual">
+                <div class="team-card__logo">
+                  <div class="team-logo team-logo--redbull">RB</div>
+                </div>
+                <div class="team-card__colors">
+                  <div class="color-block" style="background: #1E41FF;"></div>
+                  <div class="color-block" style="background: #FFD700;"></div>
+                </div>
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title">Red Bull Racing</h3>
+                <div class="team-card__subtitle">Milton Keynes</div>
+                <p class="team-card__desc">Доминирующая сила гибридной эры. 6 подряд чемпионских титулов и революционная аэродинамика.</p>
+                <div class="team-card__stats">
+                  <div class="team-stat">
+                    <span class="team-stat__value">6</span>
+                    <span class="team-stat__label">Титулы</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">117</span>
+                    <span class="team-stat__label">Победы</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">2005</span>
+                    <span class="team-stat__label">Основание</span>
+                  </div>
+                </div>
+                <div class="team-card__drivers">
+                  <span class="team-driver">Ферстаппен</span>
+                  <span class="team-driver">Перес</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="team-card reveal">
+              <div class="team-card__visual">
+                <div class="team-card__logo">
+                  <div class="team-logo team-logo--mercedes">M</div>
+                </div>
+                <div class="team-card__colors">
+                  <div class="color-block" style="background: #00D2BE;"></div>
+                  <div class="color-block" style="background: #000000;"></div>
+                </div>
+              </div>
+              <div class="team-card__content">
+                <h3 class="team-card__title">Mercedes-AMG Petronas</h3>
+                <div class="team-card__subtitle">Brackley</div>
+                <p class="team-card__desc">Германская инженерия и гибридная революция. 7 подряд чемпионских титулов с 2014 по 2020.</p>
+                <div class="team-card__stats">
+                  <div class="team-stat">
+                    <span class="team-stat__value">8</span>
+                    <span class="team-stat__label">Титулы</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">125</span>
+                    <span class="team-stat__label">Победы</span>
+                  </div>
+                  <div class="team-stat">
+                    <span class="team-stat__value">1954</span>
+                    <span class="team-stat__label">Основание</span>
+                  </div>
+                </div>
+                <div class="team-card__drivers">
+                  <span class="team-driver">Хэмилтон</span>
+                  <span class="team-driver">Рассел</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Исходные новости -->
+      <section class="news">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Последние новости</h2>
+            <p class="sectionHead__sub">Март 2026: «Читать полностью» открывает статью на весь экран — видео, фото и текст.</p>
+          </div>
+          <div class="cards" id="newsGrid" aria-label="Карточки новостей"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Модальное окно трансляции -->
+    <div class="stream-modal" id="streamModal" aria-hidden="true">
+      <div class="stream-modal__overlay" id="streamOverlay"></div>
+      <div class="stream-modal__content">
+        <div class="stream-modal__header">
+          <h3 class="stream-modal__title">Трансляция Формулы 1</h3>
+          <button class="stream-modal__close" id="streamClose" type="button" aria-label="Закрыть трансляцию">
+            ×
+          </button>
+        </div>
+        <div class="stream-modal__body">
+          <div class="stream-wrapper">
+            <iframe 
+              src="https://rutube.ru/play/embed/ba2d5b81b4a5c17aa5a218a5d79286c3/?skinColor=000000&backgroundColor=1a1a1a&highlightColor=ff0000"
+              frameBorder="0"
+              allow="clipboard-write; autoplay"
+              webkitAllowFullScreen
+              mozallowfullscreen
+              allowFullScreen
+              width="100%"
+              height="100%"
+              id="streamFrame"
+            ></iframe>
+          </div>
+          <div class="stream-info">
+            <div class="stream-info__item">
+              <span class="stream-info__label">Качество:</span>
+              <span class="stream-info__value">HD</span>
+            </div>
+            <div class="stream-info__item">
+              <span class="stream-info__label">Язык:</span>
+              <span class="stream-info__value">Русский</span>
+            </div>
+            <div class="stream-info__item">
+              <span class="stream-info__label">Статус:</span>
+              <span class="stream-info__value stream-status" id="streamStatus">Офлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">
+              <span class="brand__title">Формула 1</span>
+              <span class="brand__sub">Концепт интерфейса • чистый JavaScript</span>
+            </span>
+          </div>
+          <div class="footer__fineprint">
+            Данный сайт не имеет отношения к рекламе, размещаемой во время трансляций гонок Формула-1, а также к официальным рекламным партнёрам и спонсорам. Все рекламные материалы на сайте размещаются независимо.
+          </div>
+        </div>
+
+        <div class="footer__right" aria-label="Социальные ссылки">
+          <a class="social" href="index.html#main" aria-label="Наверх">
+            <span class="social__icon" aria-hidden="true">↑</span>
+            <span class="social__text">Наверх</span>
+          </a>
+          <a class="social" href="news.html" aria-label="Новости">
+            <span class="social__icon" aria-hidden="true">◆</span>
+            <span class="social__text">Новости</span>
+          </a>
+          <a class="social" href="index.html#standings" aria-label="Таблицы">
+            <span class="social__icon" aria-hidden="true">▦</span>
+            <span class="social__text">Таблицы</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottomInner">
+          <span>© <span id="year"></span> Формула 1</span>
+          <span class="mono">Плавная прокрутка • Свечение • Стекло</span>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="newsModal"
+      class="newsModal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="newsModalTitle"
+      aria-hidden="true"
+    >
+      <div class="newsModal__backdrop" data-news-modal-close tabindex="-1"></div>
+      <div class="newsModal__panel">
+        <div class="newsModal__chrome">
+          <button type="button" class="newsModal__iconBtn" id="newsModalClose" aria-label="Закрыть новость">
+            ×
+          </button>
+          <div class="newsModal__tools" role="toolbar" aria-label="Размер текста статьи">
+            <button type="button" class="newsModal__iconBtn" id="newsFontDec" aria-label="Уменьшить текст">A−</button>
+            <button type="button" class="newsModal__iconBtn" id="newsFontInc" aria-label="Увеличить текст">A+</button>
+          </div>
+        </div>
+        <div class="newsModal__scroller" id="newsModalBody"></div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
+

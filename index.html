@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Современный сайт о Формуле 1: гонщики, команды, календарь, новости и таблицы."
+    />
+    <title>Формула 1 — Премиальный интерфейс</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Перейти к контенту</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Формула 1 — на главную">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" focusable="false">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ff2d2d" />
+                  <stop offset="1" stop-color="#ff5b5b" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M10 40c4-10 16-18 30-18h14l-6 6H40c-10 0-18 5-22 12h36l-6 6H10z"
+                fill="url(#g)"
+              />
+              <path
+                d="M10 28c5-9 17-16 30-16h18l-6 6H40c-10 0-18 4-23 10h12l-6 6H10z"
+                fill="rgba(255,255,255,.85)"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__title">Формула 1</span>
+            <span class="brand__sub">Все о гонках</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navList">
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
+          <ul class="nav__list" id="navList">
+            <li><a class="nav__link is-active" href="#main">Главное</a></li>
+            <li><a class="nav__link" href="news.html">Новости</a></li>
+            <li><a class="nav__link" href="drivers.html">Гонщики</a></li>
+            <li><a class="nav__link" href="#teams">Команды</a></li>
+            <li><a class="nav__link" href="#calendar">Календарь</a></li>
+            <li><a class="nav__link" href="achievements.html">Достижения</a></li>
+            <li><a class="nav__link" href="#" id="streamBtn">Трансляция</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links" aria-label="Социальные сети">
+          <a class="social-link" href="https://t.me/formula1" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://vk.com/formula1" target="_blank" rel="noopener noreferrer" aria-label="VK">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 19.5c-2.08 0-4.12-.48-6.04-1.38v-2.24c1.72 1.04 3.68 1.62 5.64 1.62 1.56 0 2.64-.48 2.64-1.5 0-.72-.48-1.14-2.4-1.5l-1.62-.3c-2.88-.54-4.26-1.86-4.26-4.02 0-2.28 1.92-3.78 5.04-3.78 1.8 0 3.6.42 5.04 1.2v2.16c-1.56-.96-3.24-1.5-4.98-1.5-1.44 0-2.34.48-2.34 1.32 0 .66.48 1.02 2.16 1.32l1.68.3c3.12.6 4.44 1.92 4.44 4.14 0 2.46-1.98 4.14-5.94 4.14z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/f1" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://rutube.ru/channel/formula1" target="_blank" rel="noopener noreferrer" aria-label="Rutube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 15l5-3-5-3v6z"/>
+              <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header__line" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              Сезон 2026 • в эфире
+            </div>
+            <h1 class="hero__title">
+              
+              <span class="hero__titleAccent">Формула 1</span>
+            </h1>
+            <p class="hero__lead">
+              Здесь ты найдёшь всё о гонках: свежие новости, результаты, статистику пилотов и команд, а также подробные обзоры трасс и этапов сезона.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#race">
+                <span>Следующая гонка</span>
+                <span class="btn__icon" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn--ghost" href="#standings">
+                <span>Таблица чемпионата</span>
+              </a>
+            </div>
+
+            <div class="stats">
+              <div class="stat reveal" style="--d: 70ms">
+                <div class="stat__label">Лап</div>
+                <div class="stat__value"><span id="statLap">12</span><span class="stat__unit">/58</span></div>
+              </div>
+              <div class="stat reveal" style="--d: 140ms">
+                <div class="stat__label">DRS</div>
+                <div class="stat__value"><span id="statDrs">ВКЛ</span></div>
+              </div>
+              <div class="stat reveal" style="--d: 210ms">
+                <div class="stat__label">Темп</div>
+                <div class="stat__value"><span id="statPace">1:31.8</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__stage reveal" style="--d: 120ms">
+            <div class="stage" id="parallaxStage" aria-label="Карточка гонщика">
+              <div class="stage__glow" aria-hidden="true"></div>
+              <div class="card3d" id="driverCard">
+                <div class="card3d__bg" aria-hidden="true"></div>
+
+                <div class="card3d__content">
+                  <div class="driver">
+                    <div class="driver__meta">
+                      <div class="driver__kicker">
+                        <span class="tag" id="driverTeam">Феррари</span>
+                        <span class="tag tag--ghost" id="driverNumber">#16</span>
+                      </div>
+                      <h2 class="driver__name" id="driverName">Шарль Леклер</h2>
+                      <p class="driver__desc" id="driverDesc">
+                        Идеальная траектория, холодная голова и агрессивные обгоны с поздним торможением.
+                      </p>
+
+                      <div class="driver__chips">
+                        <div class="chip">
+                          <span class="chip__label">Позиция</span>
+                          <span class="chip__value" id="driverPos">2-е</span>
+                        </div>
+                        <div class="chip">
+                          <span class="chip__label">Очки</span>
+                          <span class="chip__value" id="driverPts">187</span>
+                        </div>
+                        <div class="chip">
+                          <span class="chip__label">Лучший круг</span>
+                          <span class="chip__value" id="driverBest">1:30.9</span>
+                        </div>
+                      </div>
+
+                      <div class="driver__actions">
+                        <button class="btn btn--tiny" type="button" id="prevDriver" aria-label="Предыдущий гонщик">
+                          ←
+                        </button>
+                        <button class="btn btn--tiny" type="button" id="nextDriver" aria-label="Следующий гонщик">
+                          →
+                        </button>
+                        <div class="driver__hint">
+                          Автосмена: <span class="mono">5 сек</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="driver__visual" aria-hidden="true">
+                      <div class="carWrap">
+                        <div class="visualStack">
+                          <div class="faceFrame" aria-hidden="true">
+                            <img id="driverFace" class="faceImg" alt="Портрет гонщика" />
+                          </div>
+                          <div class="carFrame" aria-hidden="true">
+                            <img id="driverCar" class="carImg" alt="Болид команды" />
+                            <div class="carGlow" aria-hidden="true"></div>
+                          </div>
+                        </div>
+                        <div class="speedLines" aria-hidden="true"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card3d__edge" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="hero__note">
+              При движении курсора карточка слегка наклоняется. На мобильных — без наклона.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="last-race" id="lastRace">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Последняя гонка</h2>
+            <p class="sectionHead__sub">Результаты, статистика и лучшие моменты.</p>
+          </div>
+
+          <div class="last-race__grid">
+            <article class="panel reveal">
+              <div class="panel__top">
+                <div class="panel__title">Победитель</div>
+                <div class="panel__badge panel__badge--success">
+                  <span class="dot" aria-hidden="true"></span>
+                  <span>1-е место</span>
+                </div>
+              </div>
+
+              <div class="winner-info">
+                <div class="winner__visual">
+                  <img id="winnerFace" class="winner-face" alt="Победитель гонки" />
+                  <div class="winner__trophy" aria-hidden="true">🏆</div>
+                </div>
+                
+                <div class="winner__details">
+                  <h3 class="winner__name" id="winnerName">Макс Ферстаппен</h3>
+                  <div class="winner__team">
+                    <span class="tag" id="winnerTeam">Ред Булл Рейсинг</span>
+                    <span class="tag tag--ghost" id="winnerNumber">#1</span>
+                  </div>
+                  
+                  <div class="winner__stats">
+                    <div class="winner-stat">
+                      <span class="winner-stat__label">Время</span>
+                      <span class="winner-stat__value" id="winnerTime">1:31:24.567</span>
+                    </div>
+                    <div class="winner-stat">
+                      <span class="winner-stat__label">Лучший круг</span>
+                      <span class="winner-stat__value" id="winnerBest">1:30.5</span>
+                    </div>
+                    <div class="winner-stat">
+                      <span class="winner-stat__label">Обгоны</span>
+                      <span class="winner-stat__value" id="winnerOvertakes">4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel reveal">
+              <div class="panel__top">
+                <div class="panel__title">Статистика гонки</div>
+                <div class="panel__badge panel__badge--ghost">
+                  <span class="mono">DATA</span>
+                </div>
+              </div>
+
+              <div class="race-stats">
+                <div class="race-stat">
+                  <div class="race-stat__icon">🏁</div>
+                  <div class="race-stat__content">
+                    <div class="race-stat__label">Круги</div>
+                    <div class="race-stat__value" id="totalLaps">58 / 58</div>
+                  </div>
+                </div>
+                
+                <div class="race-stat">
+                  <div class="race-stat__icon">⚡</div>
+                  <div class="race-stat__content">
+                    <div class="race-stat__label">Средняя скорость</div>
+                    <div class="race-stat__value" id="avgSpeed">212 км/ч</div>
+                  </div>
+                </div>
+                
+                <div class="race-stat">
+                  <div class="race-stat__icon">🌡️</div>
+                  <div class="race-stat__content">
+                    <div class="race-stat__label">Температура</div>
+                    <div class="race-stat__value" id="temperature">24°C / 32°C</div>
+                  </div>
+                </div>
+                
+                <div class="race-stat">
+                  <div class="race-stat__icon">🎯</div>
+                  <div class="race-stat__content">
+                    <div class="race-stat__label">Pit-stop'ы</div>
+                    <div class="race-stat__value" id="pitStops">42</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="podium">
+                <div class="podium__title">Подиум</div>
+                <div class="podium__places">
+                  <div class="podium-place">
+                    <span class="podium-place__pos">1</span>
+                    <span class="podium-place__name" id="podium1">Ферстаппен</span>
+                  </div>
+                  <div class="podium-place">
+                    <span class="podium-place__pos">2</span>
+                    <span class="podium-place__name" id="podium2">Леклер</span>
+                  </div>
+                  <div class="podium-place">
+                    <span class="podium-place__pos">3</span>
+                    <span class="podium-place__name" id="podium3">Норрис</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel panel--highlight reveal">
+              <div class="panel__top">
+                <div class="panel__title">Хайлайты гонки</div>
+                <div class="panel__badge panel__badge--ghost">
+                  <span class="mono">VIDEO</span>
+                </div>
+              </div>
+
+              <div class="highlight-wrapper">
+                <iframe 
+                  src="https://rutube.ru/play/embed/ba2d5b81b4a5c17aa5a218a5d79286c3/?skinColor=000000&backgroundColor=1a1a1a&highlightColor=ff0000"
+                  frameBorder="0"
+                  allow="clipboard-write; autoplay"
+                  webkitAllowFullScreen
+                  mozallowfullscreen
+                  allowFullScreen
+                  width="100%"
+                  height="100%"
+                  id="highlightFrame"
+                ></iframe>
+              </div>
+
+              <div class="highlights-info">
+                <div class="highlight-moment">
+                  <span class="highlight-moment__time">12:45</span>
+                  <span class="highlight-moment__desc">Драматичный обгон на прямой</span>
+                </div>
+                <div class="highlight-moment">
+                  <span class="highlight-moment__time">28:12</span>
+                  <span class="highlight-moment__desc">Борьба за лидерство</span>
+                </div>
+                <div class="highlight-moment">
+                  <span class="highlight-moment__time">45:30</span>
+                  <span class="highlight-moment__desc">Решающий pit-stop</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="race" id="race">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Следующая гонка</h2>
+            <p class="sectionHead__sub">Ключевые детали, как в гоночном брифинге.</p>
+          </div>
+
+          <div class="race__grid">
+            <article class="panel reveal">
+              <div class="panel__top">
+                <div class="panel__title">Гран-при — спринт-уик-энд</div>
+                <div class="panel__badge">
+                  <span class="dot" aria-hidden="true"></span>
+                  <span id="raceCountdown">Т‑00:00:00</span>
+                </div>
+              </div>
+
+              <div class="raceInfo">
+                <div class="raceInfo__item">
+                  <div class="raceInfo__label">Трасса</div>
+                  <div class="raceInfo__value" id="raceTrack">Circuit Gilles-Villeneuve</div>
+                </div>
+                <div class="raceInfo__item">
+                  <div class="raceInfo__label">Страна</div>
+                  <div class="raceInfo__value" id="raceCountry">Канада</div>
+                </div>
+                <div class="raceInfo__item">
+                  <div class="raceInfo__label">Дата</div>
+                  <div class="raceInfo__value" id="raceDate">24 мая 2026 • 21:00</div>
+                </div>
+                <div class="raceInfo__item">
+                  <div class="raceInfo__label">Длина круга</div>
+                  <div class="raceInfo__value">4,361 км</div>
+                </div>
+              </div>
+
+              <div class="race__actions">
+                <a class="btn btn--primary" href="#calendar">
+                  <span>Открыть календарь</span>
+                  <span class="btn__icon" aria-hidden="true">↘</span>
+                </a>
+                <button class="btn btn--ghost" type="button" id="toggleTelemetry">
+                  <span>Режим телеметрии</span>
+                </button>
+              </div>
+            </article>
+
+            <aside class="panel panel--map reveal" aria-label="Карта трассы">
+              <div class="panel__top">
+                <div class="panel__title">Карта трассы</div>
+                <div class="panel__badge panel__badge--ghost">
+                  <span class="mono">Схема</span>
+                </div>
+              </div>
+              <div class="trackMap" id="trackMap">
+                <img
+                  id="trackMapImg"
+                  class="trackMap__img"
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Marina_Bay_circuit_2023.svg"
+                  alt="Схема трассы Марина-Бэй (2023)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="mapHint"></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="news" id="news">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Последние новости</h2>
+            <p class="sectionHead__sub">Коротко, по делу, как в радиопереговорах.</p>
+          </div>
+          <div class="cards" id="newsGrid" aria-label="Карточки новостей" data-limit="6"></div>
+        </div>
+      </section>
+
+      <section class="standings" id="standings">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Таблица чемпионата</h2>
+            <p class="sectionHead__sub">Гонщики и команды — на одном экране.</p>
+          </div>
+
+          <div class="standings__grid">
+            <div class="panel reveal" id="drivers">
+              <div class="panel__top">
+                  <div class="panel__title">Положение гонщиков</div>
+                  <div class="panel__badge panel__badge--ghost"><span class="mono">Топ-6</span></div>
+              </div>
+              <div class="tableWrap">
+                <table class="table" aria-label="Таблица гонщиков">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Гонщик</th>
+                      <th scope="col">Команда</th>
+                      <th scope="col" class="table__right">Очки</th>
+                    </tr>
+                  </thead>
+                  <tbody id="driversTable"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel reveal" id="teams">
+              <div class="panel__top">
+                  <div class="panel__title">Положение команд</div>
+                  <div class="panel__badge panel__badge--ghost"><span class="mono">Топ-6</span></div>
+              </div>
+              <div class="tableWrap">
+                <table class="table" aria-label="Таблица команд">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Команда</th>
+                      <th scope="col">Пилоты</th>
+                      <th scope="col" class="table__right">Очки</th>
+                    </tr>
+                  </thead>
+                  <tbody id="teamsTable"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendar" id="calendar">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Календарь</h2>
+            <p class="sectionHead__sub">Мини-расписание ближайших этапов.</p>
+          </div>
+          <div class="calendar__grid" id="calendarGrid" aria-label="Карточки этапов"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">
+              <span class="brand__title">Формула 1</span>
+              <span class="brand__sub">Концепт интерфейса • чистый JavaScript</span>
+            </span>
+          </div>
+          <div class="footer__fineprint">
+           Данный сайт не имеет отношения к рекламе, размещаемой во время трансляций гонок Формула-1, а также к официальным рекламным партнёрам и спонсорам. Все рекламные материалы на сайте размещаются независимо.
+          </div>
+        </div>
+
+        <div class="footer__right" aria-label="Социальные ссылки">
+          <a class="social" href="#top" aria-label="Наверх">
+            <span class="social__icon" aria-hidden="true">↑</span>
+            <span class="social__text">Наверх</span>
+          </a>
+          <a class="social" href="#news" aria-label="Новости">
+            <span class="social__icon" aria-hidden="true">◆</span>
+            <span class="social__text">Новости</span>
+          </a>
+          <a class="social" href="#standings" aria-label="Таблицы">
+            <span class="social__icon" aria-hidden="true">▦</span>
+            <span class="social__text">Таблицы</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottomInner">
+          <span>© <span id="year"></span> Формула 1</span>
+          <span class="mono">Скорость • Борьба • Нервы</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальное окно трансляции -->
+    <div class="stream-modal" id="streamModal" aria-hidden="true">
+      <div class="stream-modal__overlay" id="streamOverlay"></div>
+      <div class="stream-modal__content">
+        <div class="stream-modal__header">
+          <h3 class="stream-modal__title">Трансляция Формулы 1</h3>
+          <button class="stream-modal__close" id="streamClose" type="button" aria-label="Закрыть трансляцию">
+            ×
+          </button>
+        </div>
+        <div class="stream-modal__body">
+          <div class="stream-wrapper">
+            <iframe 
+              src="https://rutube.ru/play/embed/ba2d5b81b4a5c17aa5a218a5d79286c3/?skinColor=000000&backgroundColor=1a1a1a&highlightColor=ff0000"
+              frameBorder="0"
+              allow="clipboard-write; autoplay"
+              webkitAllowFullScreen
+              mozallowfullscreen
+              allowFullScreen
+              width="100%"
+              height="100%"
+              id="streamFrame"
+            ></iframe>
+          </div>
+          <div class="stream-info">
+            <div class="stream-info__item">
+              <span class="stream-info__label">Качество:</span>
+              <span class="stream-info__value">HD</span>
+            </div>
+            <div class="stream-info__item">
+              <span class="stream-info__label">Язык:</span>
+              <span class="stream-info__value">Русский</span>
+            </div>
+            <div class="stream-info__item">
+              <span class="stream-info__label">Статус:</span>
+              <span class="stream-info__value stream-status" id="streamStatus">Офлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

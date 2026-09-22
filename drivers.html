@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Гонщики Формулы 1: информация, фото и болиды." />
+    <title>Гонщики — Формула 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Перейти к контенту</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html#main" aria-label="Формула 1 — на главную">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" focusable="false">
+              <defs>
+                <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ff2d2d" />
+                  <stop offset="1" stop-color="#ff5b5b" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M10 40c4-10 16-18 30-18h14l-6 6H40c-10 0-18 5-22 12h36l-6 6H10z"
+                fill="url(#g2)"
+              />
+              <path
+                d="M10 28c5-9 17-16 30-16h18l-6 6H40c-10 0-18 4-23 10h12l-6 6H10z"
+                fill="rgba(255,255,255,.85)"
+              />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__title">Формула 1</span>
+            <span class="brand__sub">Все о гонках</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navList">
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="sr-only">Открыть меню</span>
+          </button>
+          <ul class="nav__list" id="navList">
+            <li><a class="nav__link" href="index.html#main">Главное</a></li>
+            <li><a class="nav__link" href="news.html">Новости</a></li>
+            <li><a class="nav__link is-active" href="drivers.html">Гонщики</a></li>
+            <li><a class="nav__link" href="index.html#teams">Команды</a></li>
+            <li><a class="nav__link" href="index.html#calendar">Календарь</a></li>
+            <li><a class="nav__link" href="achievements.html">Достижения</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links" aria-label="Социальные сети">
+          <a class="social-link" href="https://t.me/formula1" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://vk.com/formula1" target="_blank" rel="noopener noreferrer" aria-label="VK">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 19.5c-2.08 0-4.12-.48-6.04-1.38v-2.24c1.72 1.04 3.68 1.62 5.64 1.62 1.56 0 2.64-.48 2.64-1.5 0-.72-.48-1.14-2.4-1.5l-1.62-.3c-2.88-.54-4.26-1.86-4.26-4.02 0-2.28 1.92-3.78 5.04-3.78 1.8 0 3.6.42 5.04 1.2v2.16c-1.56-.96-3.24-1.5-4.98-1.5-1.44 0-2.34.48-2.34 1.32 0 .66.48 1.02 2.16 1.32l1.68.3c3.12.6 4.44 1.92 4.44 4.14 0 2.46-1.98 4.14-5.94 4.14z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/f1" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://rutube.ru/channel/formula1" target="_blank" rel="noopener noreferrer" aria-label="Rutube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M10 15l5-3-5-3v6z"/>
+              <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header__line" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <section class="news">
+        <div class="container">
+          <div class="sectionHead reveal">
+            <h2 class="sectionHead__title">Гонщики</h2>
+            <p class="sectionHead__sub">Фото, болиды и карточка формы.</p>
+          </div>
+          <div class="cards" id="driversGrid" aria-label="Список гонщиков"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">
+              <span class="brand__title">Формула 1</span>
+              <span class="brand__sub">Концепт интерфейса • чистый JavaScript</span>
+            </span>
+          </div>
+          <div class="footer__fineprint">
+             Данный сайт не имеет отношения к рекламе, размещаемой во время трансляций гонок Формула-1, а также к официальным рекламным партнёрам и спонсорам. Все рекламные материалы на сайте размещаются независимо.
+          </div>
+        </div>
+
+        <div class="footer__right" aria-label="Социальные ссылки">
+          <a class="social" href="index.html#main" aria-label="Наверх">
+            <span class="social__icon" aria-hidden="true">↑</span>
+            <span class="social__text">Наверх</span>
+          </a>
+          <a class="social" href="news.html" aria-label="Новости">
+            <span class="social__icon" aria-hidden="true">◆</span>
+            <span class="social__text">Новости</span>
+          </a>
+          <a class="social" href="achievements.html" aria-label="Достижения">
+            <span class="social__icon" aria-hidden="true">▦</span>
+            <span class="social__text">Достижения</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottomInner">
+          <span>© <span id="year"></span> Формула 1</span>
+          <span class="mono">Плавная прокрутка • Свечение • Стекло</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
+
